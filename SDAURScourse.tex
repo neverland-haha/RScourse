@@ -1,0 +1,50 @@
+%遥感专题研究课程论文模板
+%带评分选项，可以直接在overleaf上编译，但是需要加入字体
+%如果需要添加图片可以自行创一个figures文件夹，小屋内上传不便.
+\documentclass[UTF8]{SDAURScourse}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc}
+\setlength{\absleftindent}{2em} 	%设置摘要缩进
+\setlength{\absrightindent}{0pt} 	%设置摘要右边缩进为0
+\renewcommand{\abstractname}{} 	%设置摘要名字为空
+\graphicspath{{figures/}}
+
+\Chtitle{机器学习在遥感中的应用}			%中文题目
+\Entitle{机器学习在地球科学中的应用}		%翻译题目	
+\fdate{2019-2020-2}										%第一行
+\name{种田人}											%姓名
+\studentnumber{20177740}					%学号
+\session{2017}										%届数
+\major{遥感科学与技术}						%专业
+\class{2}												%班级
+\ldate{二 0 二 0 年 \ 7月  \  13 日}		%学院下面的日期
+
+%分数老师填写
+\scorea{90}
+\scoreb{90} 
+\scorec{90}
+\scored{90}
+
+\begin{document}
+
+%生成封面页
+\makecover		
+
+%摘要页
+\include{abstract}
+
+%第一节
+\include{section2}
+
+%第二节
+\include{section3}
+
+%第三节
+\include{ection4}
+
+%参考文献bib
+\bibliography{reference}
+
+
+\end{document}
